@@ -4,7 +4,7 @@ int IsEven(int a){
     else return 1;
 }
 int find(int x,int y){
-    if(x>y) return find(y,x);
+    if(x<y) return find(y,x);
     if(y==0) return x;
     else{
         if(IsEven(x)){
